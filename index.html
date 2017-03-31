@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <meta charset="utf-8">
+  <title>HW04</title>
+
+  <style>
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+    }
+
+    .axis text,
+    .axis text {
+      font-size: 11px;
+      fill: black;
+    }
+
+    #block1,
+    #block2 {
+      position: relative;
+      background: #eee;
+      padding: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>1.</h1>
+  <div id="block1">
+    <div id="tooltip4" class="hidden">
+      <p><strong id="city"></strong></p>
+      <p id="industry"></p>
+    </div>
+  </div>
+  <style>
+    #tooltip4,
+    #tooltip6 {
+      position: absolute;
+      /* left: 20px; */
+      /* top:  100px; */
+      background: #fff;
+      width: 150px;
+      height: auto;
+      padding: 0px 10px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #tooltip4.hidden,
+    #tooltip6.hidden {
+      display: none;
+    }
+  </style>
+  <hr>
+
+  <h1>2.</h1>
+  <div id="block2">
+    <div id="tooltip6" class="hidden">
+      <p><strong id="city6"></strong></p>
+      <p id="industry6"></p>
+    </div>
+    <input type="button" value="PLAY" id="timer">
+  </div>
+  <hr>
+
+  <script src="./js/01.js"></script>
+  <script src="./js/02.js"></script>
+</body>
+
+</html>
